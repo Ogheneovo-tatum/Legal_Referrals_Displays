@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'expanded_screen.dart';
 import 'card_screen.dart';
 import 'column_screen.dart';
+import 'stack_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -60,6 +61,14 @@ class HomeScreen extends StatelessWidget {
             onTap: () => openScreen(context,
                 const ExpandedScreen()
             ),
+          ),
+          ListTile(
+            leading: const Icon(Icons.layers),
+            title: const Text('Stack Widget'),
+            subtitle: const Text('Layer widgets on top of each other'),
+            trailing: const Icon(Icons.arrow_forward_ios),
+            onTap: () => openScreen(context,
+            const StackScreen()),
           ),
         ],
       ),
