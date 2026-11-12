@@ -3,6 +3,7 @@ import 'expanded_screen.dart';
 import 'card_screen.dart';
 import 'column_screen.dart';
 import 'stack_screen.dart';
+import 'wrap_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -69,6 +70,14 @@ class HomeScreen extends StatelessWidget {
             trailing: const Icon(Icons.arrow_forward_ios),
             onTap: () => openScreen(context,
             const StackScreen()),
+          ),
+          ListTile(
+            leading: const Icon(Icons.wrap_text),
+            title: const Text('Wrap Widget'),
+            subtitle: Text('Responsive arrangement of widgets'),
+            trailing: const Icon(Icons.arrow_forward_ios),
+            onTap: () => openScreen(context,
+            const WrapScreen()),
           ),
         ],
       ),
