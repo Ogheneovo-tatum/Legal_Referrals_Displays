@@ -51,6 +51,7 @@ class WrapScreen extends StatelessWidget {
                   _buildAction('Beneficiaries'),
                   _buildAction('Standing orders'),
                   _buildAction('Loans'),
+                  _buildAction('Savings'),
                 ],
               ),
             ],
