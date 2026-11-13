@@ -5,6 +5,7 @@ import 'column_screen.dart';
 import 'stack_screen.dart';
 import 'wrap_screen.dart';
 import 'grid_view_screen.dart';
+import 'aspect_ratio_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -87,6 +88,14 @@ class HomeScreen extends StatelessWidget {
             trailing: const Icon(Icons.arrow_forward_ios),
             onTap: () => openScreen(context,
                 const GridViewScreen()),
+          ),
+          ListTile(
+            leading: const Icon(Icons.aspect_ratio),
+            title: const Text('AspectRatio Widget'),
+            subtitle: const Text('Maintain consistent proportions'),
+            trailing: const Icon(Icons.arrow_forward_ios),
+            onTap: () => openScreen(context,
+                const AspectRatioScreen()),
           ),
         ],
       ),
