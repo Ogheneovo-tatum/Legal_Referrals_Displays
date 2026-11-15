@@ -6,6 +6,7 @@ import 'stack_screen.dart';
 import 'wrap_screen.dart';
 import 'grid_view_screen.dart';
 import 'aspect_ratio_screen.dart';
+import 'layout_builder_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -96,6 +97,14 @@ class HomeScreen extends StatelessWidget {
             trailing: const Icon(Icons.arrow_forward_ios),
             onTap: () => openScreen(context,
                 const AspectRatioScreen()),
+          ),
+          ListTile(
+            leading: const Icon(Icons.devices),
+            title: const Text('LayoutBuilder Widget'),
+            subtitle: const Text('Build responsive layouts'),
+            trailing: const Icon(Icons.arrow_forward_ios),
+            onTap: () => openScreen(context,
+                const LayoutBuilderScreen()),
           ),
         ],
       ),
