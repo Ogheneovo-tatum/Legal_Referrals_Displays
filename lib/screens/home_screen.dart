@@ -9,6 +9,7 @@ import 'aspect_ratio_screen.dart';
 import 'layout_builder_screen.dart';
 import 'refresh_indicator_screen.dart';
 import 'dismissible_screen.dart';
+import 'reorderable_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -123,6 +124,14 @@ class HomeScreen extends StatelessWidget {
             trailing: const Icon(Icons.arrow_forward_ios),
             onTap: () => openScreen(context,
                 const DismissibleScreen()),
+          ),
+          ListTile(
+            leading: const Icon(Icons.reorder),
+            title: const Text('ReorderableListView'),
+            subtitle: const Text('Drag to rearrange services'),
+            trailing: const Icon(Icons.arrow_forward_ios),
+            onTap: () => openScreen(context,
+                const ReorderableScreen()),
           ),
         ],
       ),
