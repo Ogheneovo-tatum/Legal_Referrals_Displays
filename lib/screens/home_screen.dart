@@ -8,6 +8,7 @@ import 'grid_view_screen.dart';
 import 'aspect_ratio_screen.dart';
 import 'layout_builder_screen.dart';
 import 'refresh_indicator_screen.dart';
+import 'dismissible_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -114,6 +115,14 @@ class HomeScreen extends StatelessWidget {
             trailing: const Icon(Icons.arrow_forward_ios),
             onTap: () => openScreen(context,
                 const RefreshIndicatorScreen()),
+          ),
+          ListTile(
+            leading: const Icon(Icons.swipe),
+            title: const Text('Dismissible Widget'),
+            subtitle: const Text('Swipe to dismiss notifications'),
+            trailing: const Icon(Icons.arrow_forward_ios),
+            onTap: () => openScreen(context,
+                const DismissibleScreen()),
           ),
         ],
       ),
